@@ -15,4 +15,3 @@ footer: MIT Licensed | Copyright © 2020-present caizhengjun
 
 # Hello VuePress!
 
-
