@@ -1,17 +1,4 @@
-# caizhengjun.github.io
-
-你知道的
-
-Deploy.sh
-
-123123
+# 学习部署
 
 
 
-
-
-Fgsgsfgsdfgsfgs
-
-
-
-写一些我不知道的事情。
