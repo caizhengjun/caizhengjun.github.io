@@ -15,3 +15,4 @@ footer: MIT Licensed | Copyright © 2020-present caizhengjun
 
 # Hello VuePress!
 
+![WechatIMG427](@alias/../assets/img/WechatIMG427.png)
