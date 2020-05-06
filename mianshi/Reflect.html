@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>反射 | 技术文档</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="学习文档">
+    <link rel="preload" href="/assets/css/0.styles.96b3df2f.css" as="style"><link rel="preload" href="/assets/js/app.cbaec900.js" as="script"><link rel="preload" href="/assets/js/2.958da4b7.js" as="script"><link rel="preload" href="/assets/js/8.d6b68a10.js" as="script"><link rel="prefetch" href="/assets/js/10.862180a0.js"><link rel="prefetch" href="/assets/js/11.bc37d20f.js"><link rel="prefetch" href="/assets/js/12.f8f4320f.js"><link rel="prefetch" href="/assets/js/13.ca58a530.js"><link rel="prefetch" href="/assets/js/14.87c77777.js"><link rel="prefetch" href="/assets/js/15.df469e8c.js"><link rel="prefetch" href="/assets/js/16.650d5023.js"><link rel="prefetch" href="/assets/js/17.1988728e.js"><link rel="prefetch" href="/assets/js/3.ee9a4881.js"><link rel="prefetch" href="/assets/js/4.b874bf78.js"><link rel="prefetch" href="/assets/js/5.2c32e7d8.js"><link rel="prefetch" href="/assets/js/6.f35762a7.js"><link rel="prefetch" href="/assets/js/7.dace022a.js"><link rel="prefetch" href="/assets/js/9.c3debb60.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.96b3df2f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mybatis/mybatis.html" class="nav-link">
+  MyBatis
+</a></div><div class="nav-item"><a href="/spring/spring.html" class="nav-link">
+  Spring
+</a></div><div class="nav-item"><a href="/springboot/springboot.html" class="nav-link">
+  SpringBoot
+</a></div><div class="nav-item"><a href="/springcloud/springcloud.html" class="nav-link">
+  SpringCloud
+</a></div><div class="nav-item"><a href="/docker/docker.html" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/mq/main.html" class="nav-link">
+  消息中间件
+</a></div><div class="nav-item"><a href="/db/main.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mianshi/java.html" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-subitem"><a href="/mianshi/mybatis.html" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mybatis/mybatis.html" class="nav-link">
+  MyBatis
+</a></div><div class="nav-item"><a href="/spring/spring.html" class="nav-link">
+  Spring
+</a></div><div class="nav-item"><a href="/springboot/springboot.html" class="nav-link">
+  SpringBoot
+</a></div><div class="nav-item"><a href="/springcloud/springcloud.html" class="nav-link">
+  SpringCloud
+</a></div><div class="nav-item"><a href="/docker/docker.html" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/mq/main.html" class="nav-link">
+  消息中间件
+</a></div><div class="nav-item"><a href="/db/main.html" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mianshi/java.html" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-subitem"><a href="/mianshi/mybatis.html" class="nav-link">
+  MyBatis
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>反射</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mianshi/Reflect.html#_1-反编译字节码文件-class" class="sidebar-link">1. 反编译字节码文件 .class</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mianshi/Reflect.html#_1-1-animal-类" class="sidebar-link">1.1 Animal 类</a></li></ul></li><li><a href="/mianshi/Reflect.html#_2-反射的4种创建方式" class="sidebar-link">2. 反射的4种创建方式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mianshi/Reflect.html#_3-获取成员变量" class="sidebar-link">3. 获取成员变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mianshi/Reflect.html#_3-1-修改成员变量" class="sidebar-link">3.1 修改成员变量</a></li></ul></li><li><a href="/mianshi/Reflect.html#_4-获取成员方法" class="sidebar-link">4. 获取成员方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mianshi/Reflect.html#_5-获取构造方法" class="sidebar-link">5. 获取构造方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mianshi/Reflect.html#_5-1-执行方法" class="sidebar-link">5.1 执行方法</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="反射"><a href="#反射" class="header-anchor">#</a> 反射</h1> <h2 id="_1-反编译字节码文件-class"><a href="#_1-反编译字节码文件-class" class="header-anchor">#</a> 1. 反编译字节码文件 .class</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>javap -c xx.class
+</code></pre></div><h3 id="_1-1-animal-类"><a href="#_1-1-animal-类" class="header-anchor">#</a> 1.1 Animal 类</h3> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> name <span class="token operator">=</span> <span class="token string">&quot;Dog&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">private</span> <span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//默认无参构造函数</span>
+  <span class="token keyword">public</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Animal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//带参数的构造函数</span>
+  <span class="token keyword">public</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span> <span class="token operator">+</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">//公开 方法  返回类型和参数均有</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">sayName</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;Hello,&quot;</span> <span class="token operator">+</span> name<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2-反射的4种创建方式"><a href="#_2-反射的4种创建方式" class="header-anchor">#</a> 2. 反射的4种创建方式</h2> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ReflectTest</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// 反射获取对象的4种方式(我的理解)</span>
+    <span class="token comment">// 1 靠爷爷</span>
+    <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> c1 <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;com.codereview.demo.reflect.Animal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 2 靠爸爸</span>
+    <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> c2 <span class="token operator">=</span> <span class="token class-name">ReflectTest</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;com.codereview.demo.reflect.Animal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 3 靠天赋</span>
+    <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Animal</span><span class="token punctuation">&gt;</span></span> c3 <span class="token operator">=</span> <span class="token class-name">Animal</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">;</span>
+    <span class="token comment">// 4 靠努力</span>
+    <span class="token class-name">Animal</span> animal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">&gt;</span></span> c4 <span class="token operator">=</span> animal<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//c1 = class com.codereview.demo.reflect.Animal</span>
+<span class="token comment">//c2 = class com.codereview.demo.reflect.Animal</span>
+<span class="token comment">//c3 = class com.codereview.demo.reflect.Animal</span>
+<span class="token comment">//c4 = class com.codereview.demo.reflect.Animal</span>
+</code></pre></div><h2 id="_3-获取成员变量"><a href="#_3-获取成员变量" class="header-anchor">#</a> 3. 获取成员变量</h2> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Field</span><span class="token punctuation">[</span><span class="token punctuation">]</span> declaredFields <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getDeclaredFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取所有成员变量</span>
+<span class="token class-name">Field</span><span class="token punctuation">[</span><span class="token punctuation">]</span> fields <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取public成员变量</span>
+</code></pre></div><h3 id="_3-1-修改成员变量"><a href="#_3-1-修改成员变量" class="header-anchor">#</a> 3.1 修改成员变量</h3> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Field</span><span class="token punctuation">[</span><span class="token punctuation">]</span> declaredFields <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getDeclaredFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Field</span> field <span class="token operator">:</span> declaredFields<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token class-name">String</span> name <span class="token operator">=</span> field<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span>field<span class="token punctuation">.</span><span class="token function">getType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    field<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>a1<span class="token punctuation">,</span> <span class="token string">&quot;蔡正峻&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-获取成员方法"><a href="#_4-获取成员方法" class="header-anchor">#</a> 4. 获取成员方法</h2> <div class="language-java extra-class"><pre class="language-java"><code> <span class="token class-name">Method</span><span class="token punctuation">[</span><span class="token punctuation">]</span> declaredMethods <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getDeclaredMethods</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取所有成员方法</span>
+ <span class="token class-name">Method</span><span class="token punctuation">[</span><span class="token punctuation">]</span> methods <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getMethods</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取public成员方法</span>
+</code></pre></div><h2 id="_5-获取构造方法"><a href="#_5-获取构造方法" class="header-anchor">#</a> 5. 获取构造方法</h2> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Constructor</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> constructor <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getConstructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 无参</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Animal</span> a1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Animal</span><span class="token punctuation">)</span> constructor<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a1<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Dog</span>
+</code></pre></div><h3 id="_5-1-执行方法"><a href="#_5-1-执行方法" class="header-anchor">#</a> 5.1 执行方法</h3> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Method</span> sayName <span class="token operator">=</span> c1<span class="token punctuation">.</span><span class="token function">getMethod</span><span class="token punctuation">(</span><span class="token string">&quot;sayName&quot;</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> resultValue <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">)</span> sayName<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>a1<span class="token punctuation">,</span> <span class="token string">&quot;美丽&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;resultValue = &quot;</span> <span class="token operator">+</span> resultValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cbaec900.js" defer></script><script src="/assets/js/2.958da4b7.js" defer></script><script src="/assets/js/8.d6b68a10.js" defer></script>
+  </body>
+</html>
